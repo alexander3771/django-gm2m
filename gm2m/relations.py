@@ -67,6 +67,7 @@ class GM2MRelation(ForeignObject):
     related_accessor_class = RelatedGM2MDescriptor
 
     hidden = False
+    attname = None
 
     def __init__(self, model, field, rel, **kwargs):
         self.field = field
